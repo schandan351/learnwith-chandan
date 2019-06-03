@@ -1,4 +1,4 @@
+var navbar=document.querySelector(".navbar");
 document.querySelector(".mobile-icon").onclick=function(){
-    document.querySelector('.navbar').classList.toggle('active');
-    
+    navbar.classList.toggle("active");
 }
