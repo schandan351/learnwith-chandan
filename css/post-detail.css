@@ -9,7 +9,7 @@
     margin-left: 40px;
 }
 
-.post_detail .images{
+.post_detail img{
     width: 80%;
     margin: 0 auto;
   
@@ -21,13 +21,13 @@
     margin: 10px;
 }
 .post_detail .detail-texts{
-    font-size: 1rem;
+    font-size: 1.5rem;
     
 }
 
 /* comment desing */
 .post_detail_container .comments{
-    
+    margin-top: 50px;
 }
 .post_detail_container .comments form{
     padding: 10px;
@@ -60,6 +60,7 @@
     border-radius: 10px 0 10px 0;
     padding: 10px;
     margin: 10px;
+    box-shadow: 5px 5px 5px 5px #888888;
 }
 .pre-comments .user-detail,.comment-text{
     font-size: 1em;
