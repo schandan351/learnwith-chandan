@@ -46,7 +46,7 @@ nav .navbar{
     justify-content: center;
 }
 nav .navbar .nav-links{
-    display: flex;
+    /* display: flex; */
 }
 nav .navbar  ul{
     list-style: none;
@@ -104,7 +104,7 @@ nav .Searchform button:hover{
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
-   
+
    
 }
 .posts{
@@ -112,8 +112,7 @@ nav .Searchform button:hover{
     margin: 10px;
     background-color: #e9e9e9;
     box-shadow: 0px 0px 5px rgba(0,0, 0, 0.3);
-    transition: box-shadow 0.3s;
-
+    transition: all 0.3s ease-in-out;
 
 }
 .posts:hover{
@@ -137,10 +136,12 @@ nav .Searchform button:hover{
     padding: 10px;
     background-color:rgba(0,0, 0, 0.3);
     text-align: center;
+    
 }
 .posts .read-more a{
     text-decoration: none;
     padding: 10px;
+    color: #209CEE;
 }
 /* end of post section design */
 
@@ -148,7 +149,6 @@ nav .Searchform button:hover{
 
 .sidebar{
     width: 30%;
-    /* flex-basis: 400px; */
     padding: 10px;
     margin-top: 30px;
     margin-right: 10px;
@@ -175,6 +175,7 @@ nav .Searchform button:hover{
     padding: 10px;
     display: flex;
     flex-direction: column;
+    transition: all 0.5s ease-in-out;
 }
 .sidebar .latest-posts h1{
     font-size: 1.5em;
@@ -214,7 +215,7 @@ nav .Searchform button:hover{
     margin: 10px;
     border: 1px solid rgba(0,0, 0,0.2);
     border-radius: 50px;
-
+    transition: all 0.3s ease-in-out;
 }
 .sidebar .tags-container .tags a{
     color: #209CEE;
@@ -243,36 +244,45 @@ footer{
         font-size: 1.4em;
     }
     nav{
-        background-color: white;
+       background-color: white;
+       
     }
+    
     nav .navbar {
-        
-        /* height: 100%; */
         display: none;
     }
     nav .navbar.active{
-       width: 100rem;
         height: 100vh;
-        display: flex ;
-        flex-direction: row;
+        width: 100rem;
+        display: flex;
+        justify-content:flex-start;
+        flex-direction: column;
         text-align: center;
-        margin: 10px;
-        padding: 10px;
         transition: all 0.5s ease-in-out;
         position: relative;
-        background-color:#e9e9e9;
+        background-color:#2a4181;
+        transform:translateX(-0rem);
+        margin-top: 0px;
+    }
+    nav .navbar .nav-links ul li{
+        display: block;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+    .post-container{
+        justify-content: center;
+        /* text-align: center; */
     }
     .posts{
         /* display: none; */
-        flex-grow: 0.6;
+        flex-grow: 0.8;
         
     }
     #post-section{
         margin-top: 0px;
         
-    }
-    nav .Searchform{
-       display:inline-block;
     }
 
     .sidebar{
@@ -283,6 +293,3 @@ footer{
     }
 }
 
-@media screen and (min-width:750px){
-
-}
